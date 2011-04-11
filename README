@@ -1,0 +1,8 @@
+takes an event from the URL, passes it on to graphite and then displays a graph of the event.
+
+currently just a proof of concept for logging events to graphite via sinatra
+
+usage:
+
+http://example.com/deploy/new <-- creates a new deploy event
+http://example.com/deploy <-- shows deploy events for the past 20 minutes against another stat for the past hour (in this proof of concept, that's a metricsReceived from a carbon agent
